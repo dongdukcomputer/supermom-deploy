@@ -46,7 +46,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
+gem 'figaro'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
@@ -63,4 +63,8 @@ end
 
 group :assets do
   gem 'jquery-rails'
+end
+
+group :production do
+  gem 'mysql2'
 end
